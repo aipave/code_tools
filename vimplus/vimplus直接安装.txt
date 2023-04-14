@@ -1,0 +1,37 @@
+%vimplus离线安装方式(在网络不佳情形，推荐)：
+
+1、rm -rf ~/.vim ~/.vimplus //删除本地之前已下载内容
+2、解压
+将vim.tar.gz  解压到自己家目录
+将vimplus.tar.gz  解压到自己家目录
+3、去安装
+然后再次进去.vimplus执行 ./install.sh即可
+4、做链接
+然后新建软连接   
+ln -s ~/.vimplus/.vimrc  ~/.vimrc
+
+----------------------------------
+安装报错解决
+
+https://blog.csdn.net/sinat_16489689/article/details/109412955
+
+cd wbash: cannot create temp file for here-document: Permission denied
+
+======
+
+%vimplus在线安装方式(失败率太高，不推荐)：
+
+sudo apt install git 
+git clone https://github.com/chxuan/vimplus.git ~/.vimplus
+cd ~/.vimplus
+./install.sh
+帮助文档
+https://www.jianshu.com/p/75cde8a80fd7
+
+速度慢，可以把git换为
+git clone https://gitee.com/cskaoyan123/vimplus.git ~/.vimplus
+
+
+函数自动跳转
+
+https://blog.csdn.net/ballack_linux/article/details/71036072
